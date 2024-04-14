@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tl_input_euro"
+    style="@style/TextInputLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:hintAnimationEnabled="false">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_input_euro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/emissions"
+        android:inputType="number" />
+
+</com.google.android.material.textfield.TextInputLayout>

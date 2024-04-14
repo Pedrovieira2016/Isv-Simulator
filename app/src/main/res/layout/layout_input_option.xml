@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout android:id="@+id/tl_input_option"
+    style="@style/TextInputLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:hintAnimationEnabled="true"
+    android:clickable="true"
+    tools:hint="@string/acquisition_origin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_input_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_arrow_drop_down_circle_24"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>

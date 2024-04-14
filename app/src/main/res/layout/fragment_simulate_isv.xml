@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/medium_margin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titleSpecs"
+            style="@style/TitleTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="@string/specifications"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ccInputLayoutText"
+            style="@style/TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            app:hintAnimationEnabled="true"
+            app:layout_constraintEnd_toStartOf="@+id/emissionsInputLayoutText"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleSpecs">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ccInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/cylinder_capacity"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emissionsInputLayoutText"
+            style="@style/TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+
+            app:hintAnimationEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ccInputLayoutText"
+            app:layout_constraintTop_toBottomOf="@+id/titleSpecs">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emissionsInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/emissions"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/titleFuelType"
+            style="@style/TitleTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:text="@string/fuel"
+            app:layout_constraintTop_toBottomOf="@+id/emissionsInputLayoutText" />
+
+        <RadioGroup
+            android:id="@+id/fuelTypeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_margin"
+            app:layout_constraintTop_toBottomOf="@id/titleFuelType"
+            tools:layout_editor_absoluteX="16dp">
+
+            <RadioButton
+                android:id="@+id/dieselRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diesel" />
+
+            <RadioButton
+                android:id="@+id/gasolineRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gasoline" />
+
+            <RadioButton
+                android:id="@+id/hybridRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hybrid" />
+
+            <RadioButton
+                android:id="@+id/plugInRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hybrid_plug_in" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/titleAcquisitionOrigin"
+            style="@style/TitleTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="@string/acquisition_origin"
+            app:layout_constraintTop_toBottomOf="@+id/fuelTypeGroup" />
+
+        <vieira.apps.simulators.ui.AppSelectableView
+            android:id="@+id/originOfAcquisition"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleAcquisitionOrigin"
+            app:viewHint="@string/acquisition_origin" />
+
+        <TextView
+            android:id="@+id/titleAcquisitionDate"
+            style="@style/TitleTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:text="@string/acquisition_date"
+            app:layout_constraintTop_toBottomOf="@+id/originOfAcquisition" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/acquisitionDatePicker"
+            style="@style/TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:expandedHintEnabled="true"
+            android:layout_margin="@dimen/small_margin"
+            android:hint="@string/acquisition_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleAcquisitionDate">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/acquisitionDatePickerSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:drawableEnd="@drawable/ic_arrow_drop_down_circle_24"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/simulateButton"
+            style="@style/DialogPrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/medium_margin"
+            android:layout_marginVertical="@dimen/big_margin"
+            android:minHeight="56dp"
+            android:text="@string/simulate"
+            app:layout_constraintTop_toBottomOf="@+id/acquisitionDatePicker" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

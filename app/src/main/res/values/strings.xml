@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Simulators</string>
+    <string name="cylinder_capacity">Cylinder Capacity (cm3)</string>
+    <string name="emissions">Emissions (CO2)</string>
+    <string name="emissions_suffix">g/km CO2</string>
+    <string name="fuel">Fuel Type</string>
+    <string name="diesel">Diesel</string>
+    <string name="gasoline">Gasoline</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="hybrid_plug_in">Hybrid Plug-in</string>
+    <string name="simulate_isv">Simulate ISV</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="or_before">ou anterior</string>
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+    <string name="acquisition_date">Acquisition date</string>
+    <string name="acquisition_origin">Acquisition origin</string>
+    <string name="simulate">Simulate</string>
+    <string name="specifications">Specifications</string>
+</resources>

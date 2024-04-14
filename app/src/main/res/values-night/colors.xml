@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorSecondary">#FF462518</color>-->
+<!--    <color name="colorTertiary">#FFF6F6F7</color>-->
+<!--    <color name="colorBackground">#FF282b30</color>-->
+<!--    <color name="colorSurface">#FF9BA6B3</color>-->
+<!--    <color name="colorOnPrimary">#FDD835</color>-->
+<!--    <color name="colorOnSecondary">#FDD835</color>-->
+<!--    <color name="colorOnTertiary">#FDD835</color>-->
+<!--    <color name="colorOnBackground">#FF36393e</color>-->
+<!--    <color name="colorOnSurface">#66020202</color>-->
+<!--    <color name="colorWhite">#2C3333</color>-->
+    <color name="colorPrimaryTitle">#FFFFFF</color> <!--title-->
+    <color name="colorPrimaryDescription">#F5F5F5</color> <!-- description-->
+    <color name="colorSecondaryTitle">#FFFFFF</color> <!--title-->
+    <color name="colorSecondaryDescription">#BDBDBD</color>
+    <color name="colorSecondary">#99AAB5</color> <!-- used in secondary elements-->
+    <color name="colorAccent">#7289da</color> <!--used in buttons, switch etc-->
+    <color name="colorOnSurface">#F0F0F8</color> <!--used in the background of textinputlayout-->
+
+    <color name="grey_1">#252a34</color> <!--tab e bottom bar-->
+    <color name="grey_2">#303841</color> <!-- main app color(background)-->
+    <color name="grey_3">#3a4750</color> <!--card view background-->
+    <color name="grey_4">#99AAB5</color>
+
+    <color name="white_1">#FFFFFF</color>
+    <color name="white_2">#F5F5F5</color>
+    <color name="white_3">#BDBDBD</color>
+
+    <color name="colorPrimary">@color/grey_2</color>
+    <color name="colorBackground">@color/grey_3</color>
+    <color name="colorControlNormal">@color/white_2</color>
+
+</resources>

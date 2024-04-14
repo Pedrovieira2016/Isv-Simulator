@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextInputLayout</item>
+        <item name="hintTextColor">@color/white_1</item>
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+
+    <style name="ThemeOverlay.App.TextInputLayout" parent="">
+        <!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorError">@android:color/holo_red_light</item>
+        <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox</item>
+    </style>
+
+    <style name="TitleTextViewStyle" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/white_2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/medium_margin</item>
+    </style>
+
+    <style name="TitleTextViewStyle.L">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="RadioGroupStyle" parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.RadioButton</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
+    </style>
+
+    <style name="ThemeOverlay.App.RadioButton" parent="">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorOnSurfaceVariant">@color/colorOnSurface</item>
+    </style>
+
+    <style name="MaterialCardViewStyle" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardBackgroundColor">@color/colorBackground</item>
+        <item name="cardCornerRadius">14dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="rippleColor">@android:color/transparent</item>
+        <item name="android:layout_margin">@dimen/small_margin</item>
+    </style>
+
+
+    <style name="RecyclerViewStyle">
+        <item name="android:clipToPadding">false</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbarThumbVertical">@drawable/ic_scrollbar</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="DialogPrimaryButton" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryTitle</item>
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+    </style>
+
+    <style name="DialogSecondaryButton" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/colorPrimaryTitle</item>
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>
